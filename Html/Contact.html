@@ -27,13 +27,13 @@
        
       }
    }
-/*
-      function hover1(){document.getElementById("ConInfo").style.color = 'blue';}
-      function hover(){document.getElementById("ConInfo1").style.textAlign = "right" ;}
-      function hover(){document.getElementById("ConInfo2").style.textAlign = "right" ;}
-      function hover(){document.getElementById("ConInfo3").style.textAlign = "right"; }
-      function hover(){document.getElementById("ConInfo4").style.textAlign = "right"; }
-     $("Conif").hover(function(){document.getElementById("Conif").style.color = 'blue';},function(){}) */
+
+      function hover(){document.getElementById("ConInfo").style.color = 'blue';
+      document.getElementById("ConInfo").style.textAlign ="right" ;}
+      function hoverout(){document.getElementById("ConInfo").style.color = 'black';
+      document.getElementById("ConInfo").style.textAlign ="left" ;}
+
+     $("Conif").hover(function(){document.getElementById("Conif").style.color = 'blue';},function(){}) 
    
   </script>
 
@@ -54,12 +54,12 @@
   </div>
   <div class="container-fluid mt-3 col-4 border border-secondery border-2 rounded-2 p-3 ">
 
-    <div>
+    <div id="ConInfo" onmouseover="hover()" onmouseout="hoverout()" >
       <h3 id="Conif">Contact Info : </h3>
-      <p id="ConInfo" onmouseover="hover"><b>Address :</b> 22b Ashfield Road, Wairau Valley, Auckland 0627</p>
-      <p id="ConInfo" onmouseover="hover"><b>Phone number :</b> #64 022 735-1074 </p>
-      <p id="ConInfo" onmouseover="hover"><b>Email address :</b> Captivate-Interiors@Outlook.co.nz</p>
-      <p id="ConInfo" onmouseover="hover"><b>Fax number :</b> 1-800-444-4444</p>
+      <p><b>Address :</b> 22b Ashfield Road, Wairau Valley, Auckland 0627</p>
+      <p><b>Phone number :</b> #64 022 735-1074 </p>
+      <p><b>Email address :</b> Captivate-Interiors@Outlook.co.nz</p>
+      <p><b>Fax number :</b> 1-800-444-4444</p>
     </div>
   </div>
   <div class="container-fluid mt-3 col-4 border border-secondery border-2 rounded-2 p-3 ">

@@ -20,16 +20,12 @@
   <script>
     var button1 = document.getElementById('button1');
     button1.style.visibility = "hidden";
-
     function changeMD() {
       /* Find all the elements*/
-
       var CEO_heading = document.getElementById('CEO_HD');
       var CEO_des = document.getElementById('CEO_DES');
       var CEO_img = document.getElementById('CEOimg');
       var CEO_btn = document.getElementById('CEO_BTN');
-
-
       if (CEO_heading.textContent == "CEO Mrs Carroll Calhoun") {
         CEO_heading.innerHTML = "MD Miss Myra McBride";
         CEO_heading.style.color = "white";
@@ -56,19 +52,20 @@
         CEO_btn.innerHTML = "Change to MD"
       }
     }
-
     function hideStaff1() {
       var staff = document.getElementById('staff1');
       staff.style.visibility = "hidden";
     }
-
     function showButton1() {
       button1.style.visibility = "visible";
     }
-
     function hideButton1() {
       button1.style.visibility = "hidden";
     }
+    function hideStaff(){document.getElementById("ceo").style.visibility = "hidden";}
+
+
+
 
   </script>
 </head>
@@ -80,9 +77,12 @@
       style="overflow:visible; width: 100%; height: 100%;"></object></div>
   <div class="container-fluid mt-3 text-center ">
     <h1>About us</h1>
-    <div class="row align-items-center ">
-      <div class="col p-3 bg-dark text-white"><img id="CEOimg" class="img-fluid" src="/Images/CEO.jpeg" alt=""></div>
-      <div class="col p-3 bg-primary text-white">
+    <div class="row align-items-center" id="ceo">
+      <div class="col p-3 bg-dark text-white">
+        <img id="CEOimg" class="img-fluid" src="/Images/CEO.jpeg" alt="" id="ceo">
+        <button type="button" id="staffimg" onclick="hideStaff()"class="btn  fw-bold">Hide</button>
+      </div>
+      <div class="col p-3 bg-primary text-white" id="ceo">
         <h1 id="CEO_HD">CEO Mrs Carroll Calhoun</h1>
         <p id="CEO_DES">
           <b>current ceo and the daughter of the company founder the Magnanimous Barney Calhoun
